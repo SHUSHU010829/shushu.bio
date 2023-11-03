@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen grid grid-cols-3 divide-x">
-    <div class="col-span-2 h-screen flex flex-col bg-slate-100">
-      <div class="flex-1 overflow-y-auto p-8">
+  <div class="grid h-screen grid-cols-3 divide-x">
+    <div class="flex flex-col h-screen col-span-2 bg-slate-100">
+      <div class="flex-1 p-8 overflow-y-auto">
         <app-form-profile
           v-model:name="data.n"
           v-model:desc="data.d"
@@ -22,28 +22,28 @@
         <app-form-hr />
         <app-form-links v-model="data.ls" />
       </div>
-      <div class="border-t bg-white flex items-center">
+      <div class="flex items-center bg-white border-t">
         <button
           @click="prefillDemoData"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="flex items-center h-12 px-4 space-x-2 text-xs font-medium bg-white border-r text-slate-700"
         >
           <span> Add demo data </span>
-          <icon name="mdi:code-json" class="h-4 w-4" />
+          <icon name="mdi:code-json" class="w-4 h-4" />
         </button>
         <button
           @click="publish"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="flex items-center h-12 px-4 space-x-2 text-xs font-medium bg-white border-r text-slate-700"
         >
           <span> Publish </span>
-          <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
+          <icon name="ph:paper-plane-tilt-bold" class="w-4 h-4" />
         </button>
         <a
           href="https://github.com/fayazara/onelink"
           target="_blank"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="flex items-center h-12 px-4 space-x-2 text-xs font-medium bg-white border-r text-slate-700"
         >
           <span> Github </span>
-          <icon name="mdi:github" class="h-4 w-4" />
+          <icon name="mdi:github" class="w-4 h-4" />
         </a>
       </div>
     </div>
@@ -51,7 +51,7 @@
     <a
       href="https://twitter.com/fayazara"
       target="_blank"
-      class="absolute bottom-0 right-0 bg-white rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-500"
+      class="absolute bottom-0 right-0 px-4 py-1 text-sm font-medium text-gray-500 bg-white rounded-tl-lg shadow"
     >
       Made by Fayaz
     </a>

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 5, 3, 22;
+  --background-rgb: 244,245,240;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb))
+}
+
+.box {
+  width: 394px;
+}
+
+@media (max-width: 393px) {
+  .box {
+    width: 100%;
+  }
+}
+
+.rotate-text {
+  transform: rotate(90deg);
+}

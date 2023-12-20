@@ -12,10 +12,6 @@ body {
   background: rgb(var(--background-rgb))
 }
 
-.box {
-  width: 394px;
-}
-
 @media (max-width: 393px) {
   .box {
     width: 100%;

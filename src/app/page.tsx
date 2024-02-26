@@ -1,9 +1,11 @@
-import LinkBio from "@/components/link-bio";
+import LinkButton from "@/components/link-button";
+import SelfCard from "@/components/self-card";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center overflow-x-hidden">
-      <LinkBio />
+    <div className="">
+      <SelfCard />
+      <LinkButton />
     </div>
   );
 }

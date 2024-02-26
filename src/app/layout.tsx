@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} ${NotoSansTC.variable} bg-background`}
+        className={`${GeistSans.variable} ${GeistMono.variable} ${NotoSansTC.variable}`}
       >
         {children}
       </body>
